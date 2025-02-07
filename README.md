@@ -1,3 +1,18 @@
+#circosplot
+conda create -n syny
+conda activate syny
+run_syny.pl -a *.gbff.gz -o finaloutput directory
+run_syny.pl -a *.gbff -g 0 1 5 -r A_solani -o $tika --circos all --labels names --label_size 20 --label_font semibold
+run_syny.pl -a *.gbff -g 0 1 5 -e 1e-10 -r Alinariea25chrfinal -o tikafinal --circos all --no_skews --labels names --label_size 20 --label_font semibold --image_size 3000,3000 --output_format png --dpi 300
+conda activate bio-env
+nano ./fasta_to_gbff.py
+./fasta_to_gbff.py
+run_syny.pl -a *.gbff -o tika directory
+
+
+
+
+
 # Alternaria-linaries
 Rajan
 quality control 
